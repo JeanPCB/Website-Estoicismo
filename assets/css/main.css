@@ -1,0 +1,84 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+html {
+    overflow-y: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI";
+}
+
+#navbar.navbar {
+    align-items: flex-start baseline;
+    position: fixed;
+    min-width: 100%;
+}
+
+#brand-title {
+    font-family: 'gelioFont';
+    font-size: clamp(1rem, 8vw , 2rem);
+}
+
+#navbar .navbar-brand .navbar-item, #navbarBasicExample .navbar-item {
+    border: none;
+    margin: 0 20px;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.navbar-end .buttons {
+    padding: 0 1.8rem;
+}
+
+#navbarBasicExample .navbar-item:hover {
+    transition: 0.3s;
+    background: none;
+}
+
+#navbarBasicExample .navbar-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #fff;
+    min-height: 3px;
+    min-width: 100%;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: center;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#navbarBasicExample .navbar-item:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#signin-button {
+    color: #fff;
+    background: none;
+    transition: 0.3s;
+}
+
+#signin-button:hover {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+}
+
+#login-button {
+    color: black;
+    background-image: none !important;
+    transition: 0.3s;
+}
+
+#login-button:hover {
+    background-color: #272b30;
+    color: #fff;
+    transition: 0.3s;
+}

@@ -1,0 +1,120 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+:root {
+    --info-color: #469fdf;
+    --info-color-darker: #1a70b3;
+}
+
+html {
+    overflow-y: hidden !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: clamp(1rem, 6vw, 1.4rem) !important;
+    color: #fff;
+}
+
+input:focus {
+    outline: 2px solid var(--info-color) !important;
+}
+
+input::placeholder {
+    color: #5a606597 !important;
+}
+
+.navbar {
+    position: fixed !important;
+    min-width: 100% !important;
+}
+
+#brand-title {
+    font-family: 'gelioFont';
+    font-size: clamp(1rem, 8vw, 2rem);
+}
+
+.navbar .navbar-item, .navbar-link {
+    border: none !important;
+}
+
+.navbar-item {
+    padding: 0.5rem 1.80rem !important;
+    transition: 0.3s;
+}
+
+
+.navbar-end .buttons {
+    padding: 0.5rem 1.8rem;
+}
+
+.navbar-item:hover {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    transition: 0.3s
+}
+
+#main-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container {
+    background-color: #5a6065;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 25%;
+}
+
+#main-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#pass-eye-icon, #conf-pass-eye-icon {
+    pointer-events: all !important;
+    cursor: pointer !important;
+}
+
+#form-checkbox:hover {
+    color: #fff;
+}
+
+#form-button {
+    width: 100%;
+    background: none;
+    background-color: var(--info-color);
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+#form-button:hover {
+    background-color: var(--info-color-darker);
+    transition: 0.3s;
+}
+
+.link-text {
+    transition: 0.3s;
+}
+
+.link-text:hover {
+    font-size: clamp(1rem, 8vw, 1.2rem);
+    color: var(--info-color);
+    transition: 0.3s;
+}
