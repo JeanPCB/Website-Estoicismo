@@ -1,5 +1,10 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 
+:root {
+    --info-color: #469fdf;
+    --info-color-darker: #1a70b3;
+}
+
 html {
     overflow-y: hidden !important;
 }
@@ -68,7 +73,7 @@ body {
 }
 
 #signin-button:hover {
-    font-size: clamp(1rem, 5vw, 1.2rem);
+    color: var(--info-color);
 }
 
 #login-button {
