@@ -1,6 +1,4 @@
-# Website-Estoicismo
-
-(❌ descontinuado ❌)
+# Website-Estoicismo (❌ descontinuado ❌)
 
 *Projeto da faculdade de criação de página da web utilizando: HTML, CSS e a framework Bulma*
 
